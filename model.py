@@ -2,7 +2,7 @@ import pandas as pd
 from textblob import TextBlob
 
 def load_data():
-    return pd.read_csv("data/reviews.csv")
+    return pd.read_csv("reviews.csv")
 
 def get_sentiment(text):
     polarity = TextBlob(text).sentiment.polarity

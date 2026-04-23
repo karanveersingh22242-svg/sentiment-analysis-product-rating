@@ -31,4 +31,6 @@ df = load_data()
 
 # Metrics
 total = len(df)
-pos = len(df[df['sentiment'] ==
+pos = len(df[df['sentiment'] == 'Positive'])
+neg = len(df[df['sentiment'] == 'Negative'])
+neu = len(df[df['sentiment'] == 'Neutral'])
